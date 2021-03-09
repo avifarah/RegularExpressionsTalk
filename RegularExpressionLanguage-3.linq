@@ -7,6 +7,17 @@
 //	Run each region separately
 //
 
+//var pattern = @".";
+//var re = new Regex(pattern, RegexOptions.None);
+////var re = new Regex(pattern, RegexOptions.Singleline);
+////var re = new Regex(pattern, RegexOptions.Multiline);
+////var re = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Multiline);
+//var textContrived = "xyz\nabc\n";
+//var ms = re.Matches(textContrived);
+//foreach (Match m in ms)
+//	Console.WriteLine($"<{m}>");
+////
+
 // Text from Alice in wonderland, Wikepedia: 
 // https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland
 // First paragraph
@@ -21,14 +32,14 @@ and structure, characters and imagery have been enormously influential[3]
 in both popular culture and literature, especially in the fantasy genre.";
 
 
-//// Region Begin
-//// *
+// Region Begin
+// *
 //const string pattern = @"i\w*n";
 //var re = new Regex(pattern, RegexOptions.IgnoreCase);
 //var ms = re.Matches(text);
 //foreach (Match m in ms)
 //	Console.WriteLine(m.ToString());
-//// Region End
+// Region End
 
 
 //// Region Begin

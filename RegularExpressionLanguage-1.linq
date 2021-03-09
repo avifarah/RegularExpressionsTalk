@@ -26,8 +26,8 @@
 //var ms = re.Matches(text);
 //foreach (Match m in ms)
 //	Console.WriteLine($"{m}");	// The $"{m}" is a short hand notation to string.Format("{0}", m)
-////							// When m is not a primitive type then string.Format will employ
-////							// m.ToString().
+////								// When m is not a primitive type then string.Format will employ
+////								// m.ToString().
 //// Region End
 
 

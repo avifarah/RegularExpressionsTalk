@@ -7,6 +7,20 @@
 //	Run each region separately
 //
 
+//var pattern = @"^.";
+//var pattern = @".$";
+//var pattern = @"^.*$";
+//var re = new Regex(pattern, RegexOptions.None);
+////var re = new Regex(pattern, RegexOptions.Singleline);
+////var re = new Regex(pattern, RegexOptions.Multiline);
+//var re = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Multiline);
+//var textContrived = "xyz\nabc\n";
+//var ms = re.Matches(textContrived);
+//foreach (Match m in ms)
+//	Console.WriteLine($"<{m}>");
+//Console.WriteLine("Done");
+////
+
 // Text from Alice in wonderland, Wikepedia: 
 // https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland
 // First paragraph
