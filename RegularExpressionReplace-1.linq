@@ -21,10 +21,17 @@ whitespace.
 //// Therefore the new pattern will be @"[ \t]+"
 ////const string pattern = @"[ \t]+";
 //string replacement = " ";
-////var re = new Regex(pattern, RegexOptions.Multiline);		// Multiline or Singleline will make no difference
-//var re = new Regex(pattern, RegexOptions.Singleline);			// since "\s" will match "\r" and "\n" 
+//var re = new Regex(pattern);									// Multiline, Singleline or None will make no difference
+////var re = new Regex(pattern, RegexOptions.Multiline);			// since "\s" will match "\r" and "\n" 
+////var re = new Regex(pattern, RegexOptions.Singleline);
 //var result = re.Replace(text, replacement);
 //Console.WriteLine(result);
+//// Preserve new line
+////var result2 = re.Replace(text, m => {
+////	var count = m.ToString().Count(c => c == '\n');
+////	return count == 0 ? " " : new string('\n', count);
+////});
+////Console.WriteLine(result2);
 //// Region End
 
 
