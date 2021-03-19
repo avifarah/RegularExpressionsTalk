@@ -25,9 +25,7 @@
 //var re = new Regex(pattern);
 //var ms = re.Matches(text);
 //foreach (Match m in ms)
-//	Console.WriteLine($"{m}");	// The $"{m}" is a short hand notation to string.Format("{0}", m)
-////								// When m is not a primitive type then string.Format will employ
-////								// m.ToString().
+//	Console.WriteLine($"{m}");
 //// Region End
 
 
@@ -102,10 +100,15 @@
 //// When you count the characters remember to add 2 for CRLF (Carriage Return Line Feed) for each new-line
 //var pattern = @"........";					// 8 period characters
 ////var pattern = @"................";			// 16 period characters
+//
+////           123456789 123
 //var text = @"a.;'!1@#$ABcd
 //123
 //do-re-me";
-//var re = new Regex(pattern, RegexOptions.Multiline);
+////345678
+//
+//var re = new Regex(pattern, RegexOptions.None);
+////var re = new Regex(pattern, RegexOptions.Multiline);
 ////var re = new Regex(pattern, RegexOptions.Singleline);
 //var ms = re.Matches(text);
 //foreach (Match m in ms)

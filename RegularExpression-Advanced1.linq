@@ -19,6 +19,7 @@ var textMassaged = text.Replace(name, '\u0001'.ToString());
 
 var re = new Regex(pattern, RegexOptions.IgnoreCase);
 var ms = re.Matches(textMassaged);
+// Assumption ms.Count > 0
 foreach (Match m in ms)
 {
 	var textPart = m.ToString().Replace('\u0001'.ToString(), name);

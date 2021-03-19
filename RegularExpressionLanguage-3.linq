@@ -32,14 +32,14 @@ and structure, characters and imagery have been enormously influential[3]
 in both popular culture and literature, especially in the fantasy genre.";
 
 
-// Region Begin
-// *
+//// Region Begin
+//// *
 //const string pattern = @"i\w*n";
 //var re = new Regex(pattern, RegexOptions.IgnoreCase);
 //var ms = re.Matches(text);
 //foreach (Match m in ms)
 //	Console.WriteLine(m.ToString());
-// Region End
+//// Region End
 
 
 //// Region Begin
@@ -91,19 +91,28 @@ in both popular culture and literature, especially in the fantasy genre.";
 //	Console.WriteLine($"\"{m}\"");
 //// Region End
 
-
+// Show this example
 //// Region Begin
 //// *?
 //// The greedy pattern @"\[.*\]"  will match the first "[" then all the characters up to and including the last "]"
 //// The  lazy  pattern @"\[.*?\]" will match the "[" with the first "]"
+//var text2 = @"Alice's Adventures in Wonderland (commonly shortened to Alice in Wonderland) 
+//is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym 
+//Lewis Carroll.[1] It tells of a girl named Alice falling through a rabbit hole into a 
+//fantasy world populated by peculiar, anthropomorphic creatures. The tale plays with logic, 
+//giving the story lasting popularit of the best examples of the literary nonsense genre.[2][3] Its 
+//narrative course and structure, characters and imagery have y with adults as well as with children.[2] It is 
+//considered to be to be one of the best examples of the literary nonsense genre.[2][3] Its narrative course 
+//and structure, characters and imagery have been enormously influential[3] 
+//in both popular culture and literature, especially in the fantasy genre.";
+//
 //const string pattern = @"\[.*\]";
 ////const string pattern = @"\[.*?\]";
 //var re = new Regex(pattern, RegexOptions.Singleline);
-//var ms = re.Matches(text);
+//var ms = re.Matches(text2);
 //var i = 0;
 //foreach (Match m in ms)
-//	// $"{m}" is short hand for string.Format("{0}", m) which will translate m to m.ToString
-//	Console.WriteLine($"{i++}.  {m}");		// display match count
+//	Console.WriteLine($"{i++}.  {m}");
 //// Region End
 
 
@@ -123,23 +132,27 @@ in both popular culture and literature, especially in the fantasy genre.";
 
 
 //// Region Begin
-//var testPeriodBeginEnd = $"Abraham and Sarah{Environment.NewLine}Isaac and Rebecca{Environment.NewLine}Jacob and Rachel, Leah, Bilha and Zilpah";
+//var testPeriodBeginEnd = $"Abraham and Sarah{Environment.NewLine}Isaac and Rebecca{Environment.NewLine}" +
+//	"Jacob and Rachel, Leah, Bilha and Zilpah";
 //var pat = @"^.*$";
 //
+//Console.WriteLine("1.");
 //Console.WriteLine("RegexOptions.None: pattern: \"^.*$\"");
 //var reN = new Regex(pat);
 //var msN = reN.Matches(testPeriodBeginEnd);
 //foreach (Match m in msN)
 //	Console.WriteLine(m.ToString());
 //
+//Console.WriteLine("2.");
 //Console.WriteLine();
-//Console.WriteLine("RegexOptions.None: patter: \"^(.|\\n)*$\"");
+//Console.WriteLine("RegexOptions.None: pattern: @\"^(.|\\n)*$\"");
 //var pat2 = @"^(.|\n)*$";					// [.\n] will match a period (not a wild character) or a \n
 //var reN2 = new Regex(pat2);
 //var msN2 = reN2.Matches(testPeriodBeginEnd);
 //foreach (Match m in msN2)
 //	Console.WriteLine($"\"{m}\"");
 //
+//Console.WriteLine("S.");
 //Console.WriteLine();
 //Console.WriteLine("RegexOptions.Singleline: pattern: \"^.*$\"");
 //var reS = new Regex(pat, RegexOptions.Singleline);
@@ -147,6 +160,7 @@ in both popular culture and literature, especially in the fantasy genre.";
 //foreach (Match m in msS)
 //	Console.WriteLine($"\"{m}\"");
 //
+//Console.WriteLine("M.");
 //Console.WriteLine();
 //Console.WriteLine("RegexOptions.Multiline: pattern: \"^.*$\"");
 //var reM = new Regex(pat, RegexOptions.Multiline);

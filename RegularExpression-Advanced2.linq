@@ -1,4 +1,4 @@
-<Query Kind="Expression">
+<Query Kind="Statements">
   <Output>DataGrids</Output>
 </Query>
 

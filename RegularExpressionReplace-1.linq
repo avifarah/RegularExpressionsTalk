@@ -10,8 +10,9 @@
 var text = @"This is 	 text with   far  too   much   
 whitespace.
 1	2	3";
-//var text = "This is \t text with   far  too   much   \nwhitespace.\n1	2	3";
+//var text = "This is \t text with   far  too   much   \r\nwhitespace.\r\n1	2	3";
 
+// Show this example
 //// Region Begin
 //// Replace a string of white space characters with a single space, 
 //// Regular expression options: Multiline and Singleline
@@ -21,13 +22,14 @@ whitespace.
 //// Therefore the new pattern will be @"[ \t]+"
 ////const string pattern = @"[ \t]+";
 //string replacement = " ";
-//var re = new Regex(pattern);									// Multiline, Singleline or None will make no difference
-////var re = new Regex(pattern, RegexOptions.Multiline);			// since "\s" will match "\r" and "\n" 
+//var re = new Regex(pattern);							// Multiline, Singleline or None will make no difference
+////var re = new Regex(pattern, RegexOptions.Multiline);	// since "\s" will match "\r" and "\n" 
 ////var re = new Regex(pattern, RegexOptions.Singleline);
 //var result = re.Replace(text, replacement);
 //Console.WriteLine(result);
-//// Preserve new line
-////var result2 = re.Replace(text, m => {
+////// Preserve new line
+////Console.WriteLine();
+////var result2 = re.Replace(text, m => {					// MatchEvaluator
 ////	var count = m.ToString().Count(c => c == '\n');
 ////	return count == 0 ? " " : new string('\n', count);
 ////});

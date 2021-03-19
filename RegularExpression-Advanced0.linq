@@ -27,7 +27,6 @@
 //var re = new Regex(pattern, RegexOptions.RightToLeft);
 //var ms = re.Matches(text);
 //foreach (Match m in ms)
-//	// $"{m} " is a shorthand to string.Format("{0} ", m).  string.Format translates m to m.ToString()
 //	Console.Write($"{m} ");
 //// Region End
 //

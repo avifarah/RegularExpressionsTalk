@@ -22,6 +22,7 @@ class Program
 
 		var text2 = "The date 11/21/1988 00:23 was a good point in time. 01/01/2000 00:00:00.000 more text";
 		MatchCollection ms = _re.Matches(text2);
+		// Assumption ms.Count > 0
 		foreach (Match m in ms)
 			Console.WriteLine(m.ToString());
 	}

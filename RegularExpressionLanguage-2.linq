@@ -8,12 +8,12 @@
 //
 
 //var pattern = @"^.";
-//var pattern = @".$";
-//var pattern = @"^.*$";
+////var pattern = @".$";
+////var pattern = @"^.*$";
 //var re = new Regex(pattern, RegexOptions.None);
 ////var re = new Regex(pattern, RegexOptions.Singleline);
 ////var re = new Regex(pattern, RegexOptions.Multiline);
-//var re = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Multiline);
+////var re = new Regex(pattern, RegexOptions.Singleline | RegexOptions.Multiline);
 //var textContrived = "xyz\nabc\n";
 //var ms = re.Matches(textContrived);
 //foreach (Match m in ms)
@@ -56,7 +56,7 @@ in both popular culture and literature, especially in the fantasy genre.";
 
 //// Region Begin
 //// ^
-//var pattern = @"^\w\w\w\w\w";                                   // 5 /w
+//var pattern = @"^\w\w\w\w\w";     // 5 /w
 //var re = new Regex(pattern, RegexOptions.Multiline);
 ////var re = new Regex(pattern, RegexOptions.Singleline);
 //var ms = re.Matches(text);
@@ -68,12 +68,13 @@ in both popular culture and literature, especially in the fantasy genre.";
 //// Region Begin
 //// $
 //// This is an example where the "\r" in the pattern is mandatory
-//var pattern = @"\w+\r$";
+//var pattern = @"\w+\r?$";
 //var re = new Regex(pattern, RegexOptions.Multiline);
 ////var re = new Regex(pattern, RegexOptions.Singleline);
 //var ms = re.Matches(text);
 //foreach (Match m in ms)
 //	Console.WriteLine($"{m}");
+//Console.WriteLine("Done");
 //// Region End
 
 
@@ -87,11 +88,21 @@ in both popular culture and literature, especially in the fantasy genre.";
 //// Region End
 
 
+// Go though this example
 //// Region Begin
 //// ()
+//var text2 = @"Alice's Adventures in Wonderland (commonly shortened to Alice in Wonderland)
+//is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym
+//Lewis Carroll.[1] It tells of a girl named Alice falling through a rabbit hole into a
+//fantasy world populated by peculiar, anthropomorphic creatures. The tale plays with logic,
+//giving the story lasting popularity with adults as well as with children.[2] It is
+//considered to be one of the best examples of the literary nonsense genre.[2][3] Its
+//narrative course and structure, characters and imagery have been enormously influential[3]
+//in both popular culture and literature, especially in the fantasy genre.";
+//
 //const string pattern = @"(((\w+)\s)+)(Wonderland)";
 //var re = new Regex(pattern, RegexOptions.Singleline);
-//var m = re.Match(text);
+//var m = re.Match(text2);
 //Console.WriteLine($" m.Success:  {m.Success}");
 //Console.WriteLine($"m.ToString:  \"{m}\"");
 //Console.WriteLine($"   Group-0:  \"{m.Groups[0].Value}\"");
